@@ -25,14 +25,6 @@ body{
     display:initial;
 }
 
-.navbar.bg-dark{
-    padding:10px 20px !important;
-}
-
-.navbar{
-    padding: 20px 0 0 0 !important;
-    margin-left: -15px;
-}
     
 .table-area{
     background:white;
@@ -67,20 +59,6 @@ link{
     border-radius:50%;
 }
 
-.navbar a.navbar-brand.bg-light{
-    margin:0;
-    background:transparent;
-    padding:10px;
-}
-
-.navbar a.navbar-brand{
-    padding:10px;
-}
-
-.navbar a.navbar-brand.active{
-    border-top:2px solid green;
-    background:white;
-}
 
 @media (max-width: 1000px) {
     .table-area{
