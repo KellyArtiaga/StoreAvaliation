@@ -1,0 +1,28 @@
+<%= form_with(model: store_avaliation, local: true) do |form| %>
+  <% if store_avaliation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(store_avaliation.errors.count, "error") %> prohibited this store_avaliation from being saved:</h2>
+      <ul>
+      <% store_avaliation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <div class="field">
+    <%= form.label :user_id %>
+    <%= form.select :user_id,  options_from_collection_for_select(User.all , 'id', 'user_name',form.object.user_id) , {include_blank: false}, class: 'form-control', id: 'select_user_name'  %>
+  </div>
+  <div class="field">
+    <%= form.label :store_id %>
+    <%= form.select :store_id,  options_from_collection_for_select(Store.all , 'id', 'store_name',form.object.user_id) , {include_blank: false}, class: 'form-control', id: 'select_store_name'  %>
+  </div>
+  <div class="field">
+    <%= form.label :avaliate %>
+    <%= form.select :avaliate,  ['Excelente', 'Muito bom', 'Razoável', 'Ruim' , 'Horrível'] , {include_blank: false}, class: 'form-control', id: 'select_avaliate'  %>
+  </div><br>
+  <div class="actions">
+    <input type="submit" class="btn btn-secondary" name="commit" value="Enviar avaliação" data-disable-with="Create Store Avaliation">  
+    <%= link_to 'Voltar', store_avaliations_path, class:"btn btn-primary" %>
+  </div>
+<% end %>

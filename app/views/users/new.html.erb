@@ -1,0 +1,18 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-left">
+      <p id="notice"><%= notice %></p>
+        <h4>Novo usuário</h4>
+      <hr> 
+      <table class="table table-bordered">
+        <tbody>
+            <%= render 'form', user: @user %>
+        </tbody>
+      </table>
+      <span class="bottom-btn" >
+        <%= link_to 'Voltar', users_path, class:"btn btn-primary" %>
+      </span>
+    </div>
+  </div>
+</div>
