@@ -5,9 +5,9 @@ class StoreAvaliationsController < ApplicationController
   # GET /store_avaliations.json
   def index   
     if params[:search]
-      @stores = Store.where("stores.store_name LIKE ?", "%#{params[:search]}%").paginate(page: params[:page], per_page:3)
+      @stores = Store.where("stores.store_name LIKE ?", "%#{params[:search]}%").paginate(page: params[:page], per_page:8)
     else
-      @stores = Store.all.order(:store_name).paginate(page: params[:page], per_page:3)
+      @stores = Store.all.order(:store_name).paginate(page: params[:page], per_page:8)
     end
 
   end
