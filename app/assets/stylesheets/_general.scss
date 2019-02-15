@@ -1,0 +1,123 @@
+// Styles for everybody <3
+  // Bootstrap Replaces
+  html,
+  body {
+    margin: 0px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: baseline;
+    color: $g-scale-5;
+    background: red;
+  }
+  
+  // @media (min-width: 768px) {
+  //   .container {
+  //     width: auto;
+  //   }
+  // }
+  // @media (min-width: 992px) {
+  //   .container {
+  //     width: auto;
+  //   }
+  // }
+  // @media (min-width: 1200px) {
+  //   .container {
+  //     width: 1170px;
+  //   }
+  // }
+  
+  .center-align{
+    margin:0 auto;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  
+  .center-icon, .center-icon.glyphicon{
+    margin-bottom: 25px !important;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .centered {
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  
+  .center-vertical{
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  
+  
+  .circle{
+    z-index: 1000;
+    position: absolute !important;
+    background:transparent;
+    color:#fff;
+    line-height:300px;
+    border:15px solid $green-light-2;
+    vertical-align:middle;
+    text-align:center;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    bottom: -15%;
+    width:100px !important;
+    height:100px!important;
+  }
+
+  .img-responsive{
+    @media (max-width: 768px){
+      width: inherit;
+    }
+  }
+  
+  .text-left {
+    text-align: left!important;
+    float: left!important;
+  }
+  
+  .text-right {
+    text-align: right!important;
+    float: right!important;
+  }
+  
+  .text-center {
+    text-align: center!important;
+  }
+  
+  .disabled{
+    color: $g-scale-9;
+    background: $g-scale-5;
+    opacity:0.4;
+  }
+  
+  
+  .input-group{
+    & .btn-edit{
+      border-radius: 0  6px 6px 0;
+    }
+  
+    .btn-input {
+      @media (min-width: 768px) {
+        border-radius: 0 6px 6px 0!important;
+      }
+      @media (max-width: 768px) {
+        border-radius: 6px;
+      }
+    }
+  }
+  
+.table thead th{
+    background: whitesmoke;
+}

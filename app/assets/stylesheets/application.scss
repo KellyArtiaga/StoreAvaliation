@@ -1,0 +1,90 @@
+// FONTS
+@import url('//fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import url('//fonts.googleapis.com/css?family=Roboto');
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+// VENDOR
+@import "bootstrap-sprockets";
+
+body{
+    background:whitesmoke !important;
+    font-size:12px !important;  
+    line-height:2 !important;
+}
+
+* {
+	outline: none;
+}
+
+    
+.table-bordered tr:hover{
+    background:whitesmoke;
+}
+
+.pagination{
+    display:initial;
+}
+
+.navbar.bg-dark{
+    padding:10px 20px !important;
+}
+
+.navbar{
+    padding: 20px 0 0 0 !important;
+    margin-left: -15px;
+}
+    
+.table-area{
+    background:white;
+    padding:20px;
+    border-radius: 0 6px 6px 6px;
+    height: calc(100vh - 200px);
+}
+
+.bottom-btn{
+    float:right
+}
+
+link{
+    font-size:12px;
+}
+
+.table thead th{
+    background:whitesmoke
+}
+
+.icone{
+    width:30px!important;
+    height:auto;
+}
+
+.circle-gray{
+    background:whitesmoke;
+    border:1px solid lightgray;
+    vertical-align:middle;
+    padding:5px 8px;
+    text-align:center;
+    border-radius:50%;
+}
+
+.navbar a.navbar-brand.bg-light{
+    margin:0;
+    background:transparent;
+    padding:10px;
+}
+
+.navbar a.navbar-brand{
+    padding:10px;
+}
+
+.navbar a.navbar-brand.active{
+    border-top:2px solid green;
+    background:white;
+}
+
+@media (max-width: 1000px) {
+    .table-area{
+    overflow: auto;
+    display: list-item;
+    }
+}
